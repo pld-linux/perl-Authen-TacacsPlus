@@ -3,11 +3,11 @@ Summary:	Authen::TacacsPlus perl module
 Summary(pl):	Modu³ perla Authen::TacacsPlus
 Name:		perl-Authen-TacacsPlus
 Version:	0.16
-Release:	6
+Release:	7
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Authen/TacacsPlus-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl >= 5.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -21,7 +21,8 @@ Authen::TacacsPlus - modu³ do autentykacji przy pomocy serwera tacacs+.
 %setup -q -n TacacsPlus-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %install
@@ -35,7 +36,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes readme
-%{perl_sitearch}/Authen/TacacsPlus.pm
-%dir %{perl_sitearch}/auto/Authen/TacacsPlus
-%attr(755,root,root) %{perl_sitearch}/auto/Authen/TacacsPlus/TacacsPlus.so
+%{perl_vendorarch}/Authen/TacacsPlus.pm
+%dir %{perl_vendorarch}/auto/Authen/TacacsPlus
+%attr(755,root,root) %{perl_vendorarch}/auto/Authen/TacacsPlus/TacacsPlus.so
 %{_mandir}/man3/*
