@@ -29,14 +29,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf Changes readme
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc Changes readme
 %{perl_sitearch}/Authen/TacacsPlus.pm
 %dir %{perl_sitearch}/auto/Authen/TacacsPlus
 %attr(755,root,root) %{perl_sitearch}/auto/Authen/TacacsPlus/TacacsPlus.so
