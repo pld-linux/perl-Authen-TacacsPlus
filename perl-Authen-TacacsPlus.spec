@@ -1,3 +1,8 @@
+#
+# Conditional build:
+%bcond_with	tests	# perform "make test"
+			# tests hang: require server ?
+#
 %include	/usr/lib/rpm/macros.perl
 Summary:	Authen::TacacsPlus - Perl extension module for authentication using tacacs+ server
 Summary(pl):	Authen::TacacsPlus - modu³ Perla do uwierzytelniania przy pomocy serwera tacacs+
@@ -26,12 +31,16 @@ serwera tacacs+.
 %build
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
-%{__make} OPTIMIZE="%{rpmcflags}"
+%{__make} \
+	OPTIMIZE="%{rpmcflags}"
+
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
