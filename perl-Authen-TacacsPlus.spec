@@ -3,11 +3,11 @@ Summary:	Authen::TacacsPlus perl module
 Summary(pl):	Modu³ perla Authen::TacacsPlus
 Name:		perl-Authen-TacacsPlus
 Version:	0.16
-Release:	6
+Release:	7
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Authen/TacacsPlus-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.0.2-104
 BuildRequires:	perl >= 5.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
