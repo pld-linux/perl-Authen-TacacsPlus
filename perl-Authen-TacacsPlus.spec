@@ -4,7 +4,7 @@ Summary(pl):	Modu³ perla Authen::TacacsPlus
 Name:		perl-Authen-TacacsPlus
 Version:	0.16
 Release:	7
-License:	GPL
+License:	custom, distributable
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Authen/TacacsPlus-%{version}.tar.gz
 # Source0-md5:	6f5fbe80c677dc75c7f7b71ec05c244b
