@@ -23,7 +23,7 @@ Authen::TacacsPlus - modu³ do autentykacji przy pomocy serwera tacacs+.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %install
