@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
-Summary:	Authen-TacacsPlus perl module
-Summary(pl):	Modu³ perla Authen-TacacsPlus
+Summary:	Authen::TacacsPlus perl module
+Summary(pl):	Modu³ perla Authen::TacacsPlus
 Name:		perl-Authen-TacacsPlus
 Version:	0.16
 Release:	6
@@ -12,10 +12,10 @@ BuildRequires:	perl >= 5.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Authen-TacacsPlus - module for authentication using tacacs+ server.
+Authen::TacacsPlus - module for authentication using tacacs+ server.
 
 %description -l pl
-Authen-TacacsPlus - modu³ do autentykacji przy pomocy serwera tacacs+.
+Authen::TacacsPlus - modu³ do autentykacji przy pomocy serwera tacacs+.
 
 %prep
 %setup -q -n TacacsPlus-%{version}
