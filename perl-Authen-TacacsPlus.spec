@@ -5,7 +5,7 @@
 #
 %include	/usr/lib/rpm/macros.perl
 Summary:	Authen::TacacsPlus - Perl extension module for authentication using tacacs+ server
-Summary(pl):	Authen::TacacsPlus - modu≥ Perla do uwierzytelniania przy pomocy serwera tacacs+
+Summary(pl.UTF-8):   Authen::TacacsPlus - modu≈Ç Perla do uwierzytelniania przy pomocy serwera tacacs+
 Name:		perl-Authen-TacacsPlus
 Version:	0.16
 Release:	8
@@ -21,8 +21,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Authen::TacacsPlus Perl module allows you to authenticate using
 tacacs+ server.
 
-%description -l pl
-Modu≥ Perla Authen::TacacsPlus pozwala na uwierzytelnianie przy pomocy
+%description -l pl.UTF-8
+Modu≈Ç Perla Authen::TacacsPlus pozwala na uwierzytelnianie przy pomocy
 serwera tacacs+.
 
 %prep
