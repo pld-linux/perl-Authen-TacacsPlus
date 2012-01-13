@@ -7,12 +7,12 @@
 Summary:	Authen::TacacsPlus - Perl extension module for authentication using tacacs+ server
 Summary(pl.UTF-8):	Authen::TacacsPlus - moduł Perla do uwierzytelniania przy pomocy serwera tacacs+
 Name:		perl-Authen-TacacsPlus
-Version:	0.20
-Release:	6
+Version:	0.21
+Release:	1
 License:	custom, distributable
 Group:		Development/Languages/Perl
 Source0:	http://search.cpan.org/CPAN/authors/id/M/MI/MIKEM/Authen-TacacsPlus/Authen-TacacsPlus-%{version}.tar.gz
-# Source0-md5:	696eaa9691e68f1bbe8f4d9a2c216433
+# Source0-md5:	b18a51b7fb854599326babffbeb4b668
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
