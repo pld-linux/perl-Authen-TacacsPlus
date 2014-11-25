@@ -2,7 +2,9 @@
 # Conditional build:
 %bcond_with	tests	# perform "make test"
 			# tests hang: require server ?
-#
+
+%define		pdir	Authen
+%define		pnam	TacacsPlus
 %include	/usr/lib/rpm/macros.perl
 Summary:	Authen::TacacsPlus - Perl extension module for authentication using tacacs+ server
 Summary(pl.UTF-8):	Authen::TacacsPlus - moduł Perla do uwierzytelniania przy pomocy serwera tacacs+
@@ -13,8 +15,9 @@ License:	custom, distributable
 Group:		Development/Languages/Perl
 Source0:	http://search.cpan.org/CPAN/authors/id/M/MI/MIKEM/Authen-TacacsPlus/Authen-TacacsPlus-%{version}.tar.gz
 # Source0-md5:	509f2d176393d80cc2657a9af1424982
-BuildRequires:	rpm-perlprov >= 4.1-13
+URL:		http://search.cpan.org/dist/Authen-TacacsPlus/
 BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
