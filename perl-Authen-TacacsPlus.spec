@@ -5,7 +5,6 @@
 
 %define		pdir	Authen
 %define		pnam	TacacsPlus
-%include	/usr/lib/rpm/macros.perl
 Summary:	Authen::TacacsPlus - Perl extension module for authentication using tacacs+ server
 Summary(pl.UTF-8):	Authen::TacacsPlus - moduł Perla do uwierzytelniania przy pomocy serwera tacacs+
 Name:		perl-Authen-TacacsPlus
